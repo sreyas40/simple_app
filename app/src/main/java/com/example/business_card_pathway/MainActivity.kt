@@ -41,14 +41,14 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BusinessCard() {
-    Column(modifier = Modifier.background(color = Color(0xFF7692FF))) {
+    Column(modifier = Modifier.background(color = Color(0xFFFE5DFF))) {
         Column(modifier = Modifier.weight(2f).fillMaxWidth() ,
         horizontalAlignment = Alignment.CenterHorizontally ,
         verticalArrangement = Arrangement.Center) {
-            val image = painterResource(id = R.drawable.app_intro_icon)
+            val image = painterResource(id = R.drawable.resume_maker_logo)
             Image(painter = image, contentDescription = null , modifier = Modifier.height(150.dp).width(150.dp))
-            Text(text = stringResource(R.string.dev_name) , fontWeight = FontWeight.Bold , fontSize = 24.sp)
-            Text(text = stringResource(R.string.dev_title))
+            Text(text = stringResource(R.string.company_name) , fontWeight = FontWeight.Bold , fontSize = 24.sp)
+            Text(text = stringResource(R.string.company_motto))
         }
         Column(modifier = Modifier.weight(1f)) {
           Row {
